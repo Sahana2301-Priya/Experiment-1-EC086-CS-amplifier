@@ -9,7 +9,45 @@ A common-source amplifier is a type of FET amplifier where the input signal is a
 4. **AC Input (SINE source):** The test signal used to analyze circuit response.
 
 **Circuit diagram:**
-![Circuit Diagram](https://github.com/your-username/your-repository/blob/main/path/to/your-circuit.png
+![Circuit Diagram](https://github.com/Sahana2301-Priya/Experiment-1-EC086-CS-amplifier/main/circuit.png
 )
+
+
+
+
+
+
+
+
+
+
+
+This report presents the DC analysis, AC analysis, Transient analysis of a common-source NMOS amplifier. The objective of this analysis is to determine the DC biasing conditions, gain and output impedence using Transient analysis, and to find frequency response using AC analysis.
+
+## **Component Details:**
+The circuit consists of a TSMC 500nm NMOS transistor (CMOSN), a drain resistor and two voltage sources. The drain resistor limits the current through the transistor and affects the small-signal gain. The NMOS transistor operates in saturation region, making it suitable for amplification.
+**Model:** **CMOSN**
+
+**Channel Length:** 500nm
+
+**Channel Width:** 450nm
+
+**Threshold Voltage:** 0.366V
+
+**Resistor:** 1000 ohm
+
+**Supply Voltage:** 1.8V
+
+**DC Voltage:** 0.9V
+
+**Amplitude:** 50mV
+**Frequency:** 1kHz
+
+
+
+
+
+
+
 
 
