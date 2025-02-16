@@ -33,6 +33,19 @@ The circuit consists of a TSMC 500nm NMOS transistor (CMOSN), a drain resistor a
 
 **Frequency:** 1kHz
 
+# Procedure:
+
+1.Create a new folder and name it as project file.Save the LT spice file in this folder.
+
+2.Name the mosfet as CMOSN and the length as 500nm and width as 450um initially.
+
+3.**DC Analysis**: Set up the circuit as per the circuit diagram with proper connections ensuring valid circuit for further analysis. Apply the DC voltage of Vdd=1.8V and Vgs = 0.9 V . Go to simulate option in the tab and edit simulation command, click on DC analysis and press ok.(.op) Click on Run in the tab menu to get the DC operating point ,Vout and Id.
+
+4.**Transient Analysis:** Apply a sine wave input of Vgs=0.9V with an amplitude of 50mV and frequency of 1kHz by going to advanced menu in the voltage setting option.go to simulate option in tab ,edit simulation command , click on transient analysis and give the stop time as 5m and click ok. Now Run to visualise the response of the circuit to a time varying signal.
+
+5.**AC Analysis:** Go to spice directive and give the library file path for the simulator to access the data through the path . Go to simulate option in the tab , edit simulation command , click on AC analysis and mention the time of sweep as decade , no of points as 20 and frequency as 1kHz to 1THz and click on ok. Now Run to analyze the gain and frequency response of the circuit
+
+
 # DC analysis:
 ![Screenshot (4)](https://github.com/user-attachments/assets/ace138bb-4999-45ce-af52-ea14d6f1847b)
 
@@ -114,7 +127,7 @@ Transient analysis in a common-source amplifier examines how the amplifier react
 For this experiment, we will find the gain and output impedence of the circuit.
 For the same circuit, we will perform the transient analysis keeping the sinusoidal voltage signal  **DC offset as 0.9V**, and **amplitude 50mV**, and **frequency = 1kHz**
 And the **AC amplitude as 1V**.
-In the configure analysis select  **stop time as 5ms**.
+In the configure analysis select  **stop time as 5ms**. There is **180 degree phase shift** between input and output and a DC level phase shift observed.
 
 **Circuit Diagram:**
 
@@ -173,6 +186,70 @@ The circuit maintains a stable gain over different frequencies, proving it works
 
 **Transient Analysis:**
 The output signal is amplified and flipped by 180° (inverted), which is expected in a Common Source amplifier. The gain of the circuit is around 1.969. The circuit has an output resistance of 1kΩ, affecting how it drives the next stage in a system.
+
+
+
+
+
+## Circuit-2:
+
+A **Diode connected mosfet** transistor always is in saturation and acts as a constant current source and acts as a amplifier. The different type of analysis are DC Analysis, AC Analysis and Transient analysis. The drain current obtained is given by the formula
+**Id = 1/2 kn Vov2** ; 
+
+**Vov=Vgs-Vth** and 
+
+**kn=un Cox W/L**
+
+**Circuit Diagram:**
+![cir](https://github.com/user-attachments/assets/675b9a86-65e0-481b-9489-54944bcecc6b)
+
+The procedure is same as above;.for the pmos name it as CMOSP and set the **length as 500nm** and **width as 487nm** respectively.
+
+# DC analysis:
+
+![Screenshot (14)](https://github.com/user-attachments/assets/85fcd20a-d081-4a72-aaf1-3e79ac8d499e)
+
+
+the **Q point** is (**1.45223 V , 27.394 μA**)
+
+
+# AC analysis:
+
+![ac](https://github.com/user-attachments/assets/f9f4bac8-0717-45e1-9775-b49c78ae5f78)
+
+**Voltage gain = 0.806**
+
+
+# Transient analysis:
+
+![trans](https://github.com/user-attachments/assets/acafd7c3-aec1-4cbc-a22b-3a807b2b26ab)
+
+There is **180 degree phase shift** between input and output and a DC level phase shift observed.
+
+
+# Results:
+
+Id = 27.394 μA
+
+Vov = 0.534 V
+
+Vout = 1.4522 V
+
+Voltage gain =  0.806
+
+# Inference:
+
+1.The Current Id is dependent on width and hence it changes when the width changes whereas the remaining parameters remain constant.
+
+2.DC Analysis ensures proper biasing and hence the mosfet operates in saturation and Q point stability is attained.
+
+3.The Transient analysis gives the response of the circuit to time domain ssignal and determines how quickly the circuit responds to variation.
+This is essential in high speed applications.
+
+4.AC Analysis helps in designing circuits with desired gain and helps in impedance matching. Also helps in understanding the frequency response and small signal behaviour of the circuit.
+
+5.Together all the analysis helps in designing and opyimising an amplifier.
+
 
 
 
