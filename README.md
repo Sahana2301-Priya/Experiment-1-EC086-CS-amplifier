@@ -191,14 +191,24 @@ The output signal is amplified and flipped by 180° (inverted), which is expecte
 
 
 
+
+
+
+
+
+
+
 ## Circuit-2:
 
-A **Diode connected mosfet** transistor always is in saturation and acts as a constant current source and acts as a amplifier. The different type of analysis are DC Analysis, AC Analysis and Transient analysis. The drain current obtained is given by the formula
+A **Diode connected mosfet** transistor always is in saturation and acts as a constant current source and acts as a amplifier. The different type of analysis are done here also DC Analysis, AC Analysis and Transient analysis. The drain current obtained is given by the formula:
+
 **Id = 1/2 kn Vov2** ; 
 
 **Vov=Vgs-Vth** and 
 
 **kn=un Cox W/L**
+
+
 
 **Circuit Diagram:**
 ![cir](https://github.com/user-attachments/assets/675b9a86-65e0-481b-9489-54944bcecc6b)
