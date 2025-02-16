@@ -258,7 +258,7 @@ This is essential in high speed applications.
 
 4.AC Analysis helps in designing circuits with desired gain and helps in impedance matching. Also helps in understanding the frequency response and small signal behaviour of the circuit.
 
-5.Together all the analysis helps in designing and opyimising an amplifier.
+5.Together all the analysis helps in designing and optimising an amplifier.
 
 
 
