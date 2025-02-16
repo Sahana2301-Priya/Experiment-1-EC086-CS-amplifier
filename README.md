@@ -9,6 +9,7 @@ A common-source amplifier is a type of FET amplifier where the input signal is a
 4. **AC Input (SINE source):** The test signal used to analyze circuit response.
 
 **Circuit diagram:**
-![Circuit Diagram](https://github.com/your-username/your-repository/blob/main/path/to/your-)
+![Circuit Diagram](https://github.com/your-username/your-repository/blob/main/path/to/your-
+)
 
 
