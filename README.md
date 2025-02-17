@@ -200,7 +200,7 @@ The output signal is amplified and flipped by 180° (inverted), which is expecte
 
 ## Circuit-2:
 
-A **Diode connected mosfet** transistor always is in saturation and acts as a constant current source and acts as a amplifier. The different type of analysis are done here also DC Analysis, AC Analysis and Transient analysis. The drain current obtained is given by the formula:
+A **Diode connected mosfet** and **diode connected load** are  essentially samething; when a mosfet is used as load in a circuit with its gate and drain terminals shorted together, it acts like a diode referred to as a **diode connected load**-the mosfet itself is the load acting like a diode in that configuration. Transistor always is in saturation and acts as a constant current source and acts as a amplifier. The different type of analysis are done here also DC Analysis, AC Analysis and Transient analysis. The drain current obtained is given by the formula:
 
 **Id = 1/2 kn Vov2** ; 
 
@@ -211,41 +211,43 @@ A **Diode connected mosfet** transistor always is in saturation and acts as a co
 
 
 **Circuit Diagram:**
-![cir](https://github.com/user-attachments/assets/675b9a86-65e0-481b-9489-54944bcecc6b)
+![cir2](https://github.com/user-attachments/assets/0a2d5238-a9c6-4829-8f0e-a4d051e3c6a6)
+
 
 The procedure is same as above;.for the pmos name it as CMOSP and set the **length as 500nm** and **width as 487nm** respectively.
 
 # DC analysis:
+![dc2](https://github.com/user-attachments/assets/21a734f8-e2f4-4c18-9496-5bb024562b7a)
 
-![Screenshot (14)](https://github.com/user-attachments/assets/85fcd20a-d081-4a72-aaf1-3e79ac8d499e)
 
 
-the **Q point** is (**1.45223 V , 27.394 μA**)
+
+the **Q point** is (**1.23817 V , 27.1541 μA**)
 
 
 # AC analysis:
 
-![ac](https://github.com/user-attachments/assets/f9f4bac8-0717-45e1-9775-b49c78ae5f78)
+![ac 2](https://github.com/user-attachments/assets/1365f5e4-2125-48f8-9832-3d3eb20a53b3)
 
-**Voltage gain = 0.806**
+
+**Gain (in dB) = -0.229 dB**
 
 
 # Transient analysis:
 
-![trans](https://github.com/user-attachments/assets/acafd7c3-aec1-4cbc-a22b-3a807b2b26ab)
+![trans2](https://github.com/user-attachments/assets/8859a0fd-ddc4-46b6-b5a1-d95fba7920af)
+
 
 There is **180 degree phase shift** between input and output and a DC level phase shift observed.
 
 
 # Results:
 
-Id = 27.394 μA
+Id = 27.1541 μA
 
-Vov = 0.534 V
+Vout = 1.23817 V
 
-Vout = 1.4522 V
-
-Voltage gain =  0.806
+ Gain(in dB) =  -0.2292 dB
 
 # Inference:
 
